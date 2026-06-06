@@ -1,0 +1,155 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Rich Metallic Gold Gradients -->
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F2E3C6" />
+      <stop offset="30%" stop-color="#D4AF37" />
+      <stop offset="50%" stop-color="#F3E5AB" />
+      <stop offset="70%" stop-color="#AA7C11" />
+      <stop offset="100%" stop-color="#D4AF37" />
+    </linearGradient>
+    <linearGradient id="goldGradLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#B8860B" />
+      <stop offset="50%" stop-color="#FFD700" />
+      <stop offset="100%" stop-color="#FFF8DC" />
+    </linearGradient>
+    <filter id="subtleShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.3" />
+    </filter>
+  </defs>
+
+  <g filter="url(#subtleShadow)">
+    <!-- Inner Shield Background (Dark Charcoal for contrast inside gold border) -->
+    <path d="M 250,150 
+             C 320,150 340,165 340,210 
+             C 340,300 290,360 250,390 
+             C 210,360 160,300 160,210 
+             C 160,165 180,150 250,150 Z" 
+          fill="#1E1E1E" stroke="url(#goldGrad)" stroke-width="2" />
+
+    <!-- Outer Shield Border -->
+    <path d="M 250,135 
+             C 335,135 360,155 360,205 
+             C 360,315 300,385 250,420 
+             C 200,385 140,315 140,205 
+             C 140,155 165,135 250,135 Z" 
+          fill="none" stroke="url(#goldGrad)" stroke-width="10" stroke-linejoin="round" />
+
+    <!-- Shield Inner Fine Gold Outline -->
+    <path d="M 250,155 
+             C 315,155 330,170 330,210 
+             C 330,290 285,350 250,378 
+             C 215,350 170,290 170,210 
+             C 170,170 185,155 250,155 Z" 
+          fill="none" stroke="url(#goldGradLight)" stroke-width="2" opacity="0.8" />
+
+    <!-- Royal Crown on top of Shield -->
+    <g transform="translate(0, -10)">
+      <!-- Crown Base -->
+      <path d="M 190,125 C 190,120 310,120 310,125 L 300,135 L 200,135 Z" fill="url(#goldGrad)" />
+      <rect x="205" y="135" width="90" height="6" rx="3" fill="url(#goldGradLight)" />
+      
+      <!-- Crown Peaks -->
+      <path d="M 195,123 
+               L 180,75 L 215,95 
+               L 250,55 
+               L 285,95 L 320,75 
+               L 305,123 Z" 
+            fill="url(#goldGrad)" stroke="url(#goldGradLight)" stroke-width="2" stroke-linejoin="round" />
+      
+      <!-- Jewels on Peaks -->
+      <circle cx="180" cy="73" r="6" fill="#FFF8DC" stroke="url(#goldGrad)" stroke-width="1.5" />
+      <circle cx="215" cy="93" r="5" fill="#FFF8DC" stroke="url(#goldGrad)" stroke-width="1.5" />
+      <circle cx="250" cy="52" r="8" fill="#FFF8DC" stroke="url(#goldGrad)" stroke-width="2" />
+      <circle cx="285" cy="93" r="5" fill="#FFF8DC" stroke="url(#goldGrad)" stroke-width="1.5" />
+      <circle cx="320" cy="73" r="6" fill="#FFF8DC" stroke="url(#goldGrad)" stroke-width="1.5" />
+      
+      <!-- Small Jewels in Crown Base -->
+      <circle cx="220" cy="130" r="3.5" fill="#FFF" />
+      <circle cx="250" cy="130" r="3.5" fill="#FFF" />
+      <circle cx="280" cy="130" r="3.5" fill="#FFF" />
+    </g>
+
+    <!-- Capital "R" Monogram (Vectorized Georgia/Playfair serif style) -->
+    <path d="M 215,195 
+             H 255 
+             C 285,195 295,208 295,225 
+             C 295,242 280,255 255,255 
+             H 232 
+             V 315 
+             C 232,322 238,325 248,325 
+             H 252 
+             V 332 
+             H 205 
+             V 332 
+             H 209
+             C 219,332 225,329 225,322
+             V 208
+             C 225,201 219,198 209,198
+             H 205
+             V 195 Z
+             M 232,205
+             V 245
+             H 250
+             C 270,245 277,235 277,225
+             C 277,215 270,205 250,205
+             H 232 Z
+             M 252,255
+             L 282,318
+             C 287,328 293,332 301,332
+             H 305
+             V 338
+             H 265
+             V 332
+             H 268
+             C 272,332 274,330 272,325
+             L 248,272
+             L 232,260
+             V 255
+             H 252 Z" 
+          fill="url(#goldGradLight)" filter="url(#subtleShadow)" />
+
+    <!-- Left Foliage (Ornamental Flourishes) -->
+    <path d="M 130,220 
+             C 100,200 80,230 70,260 
+             C 60,290 70,320 90,340 
+             C 115,365 140,355 140,355 
+             C 140,355 110,340 105,310 
+             C 100,280 115,250 135,240 
+             C 140,238 142,228 130,220 Z" 
+          fill="url(#goldGrad)" />
+    
+    <path d="M 125,290 
+             C 95,290 75,320 70,350 
+             C 65,380 85,410 110,420 
+             C 135,430 155,410 155,410 
+             C 155,410 125,400 115,375 
+             C 105,350 115,315 135,305 
+             C 140,303 140,293 125,290 Z" 
+          fill="url(#goldGrad)" />
+
+    <!-- Right Foliage (Ornamental Flourishes) -->
+    <path d="M 370,220 
+             C 400,200 420,230 430,260 
+             C 440,290 430,320 410,340 
+             C 385,365 360,355 360,355 
+             C 360,355 390,340 395,310 
+             C 400,280 385,250 365,240 
+             C 360,238 358,228 370,220 Z" 
+          fill="url(#goldGrad)" />
+    
+    <path d="M 375,290 
+             C 405,290 425,320 430,350 
+             C 435,380 415,410 390,420 
+             C 365,430 345,410 345,410 
+             C 345,410 375,400 385,375 
+             C 395,350 385,315 365,305 
+             C 360,303 360,293 375,290 Z" 
+          fill="url(#goldGrad)" />
+
+    <!-- Delicate Star Accents -->
+    <path d="M 250,20 L 253,27 L 260,30 L 253,33 L 250,40 L 247,33 L 240,30 L 247,27 Z" fill="#FFF8DC" />
+    <path d="M 100,160 L 102,164 L 106,166 L 102,168 L 100,172 L 98,168 L 94,166 L 98,164 Z" fill="#FFF8DC" />
+    <path d="M 400,160 L 402,164 L 406,166 L 402,168 L 400,172 L 398,168 L 394,166 L 398,164 Z" fill="#FFF8DC" />
+  </g>
+</svg>
